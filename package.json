@@ -2,19 +2,30 @@
   "name": "devicefarm-web-nodejs-test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "wdio.conf.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "@wdio/appium-service": "^5.11.4",
     "@wdio/cli": "^5.11.6",
-    "@wdio/dot-reporter": "^5.11.7",
-    "@wdio/local-runner": "^5.11.11",
+    "@wdio/dot-reporter": "^5.11.0",
+    "@wdio/local-runner": "^5.11.6",
     "@wdio/mocha-framework": "^5.11.0",
-    "@wdio/sync": "^5.11.11"
-  }
+    "@wdio/sync": "^5.11.0"
+  },
+  "bundledDependencies": [
+    "@wdio/appium-service",
+    "@wdio/cli",
+    "@wdio/dot-reporter",
+    "@wdio/local-runner",
+    "@wdio/mocha-framework",
+    "@wdio/sync"
+  ]
 }
